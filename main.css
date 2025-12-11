@@ -1,17 +1,16 @@
 @charset "UTF-8";
 
-/* 基本設定 */
+
 body {
     font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
     line-height: 1.8;
-    /* 読みやすい行間（0.5 は小さすぎるため修正） */
     color: #333;
     background-color: #f8f8f8;
     margin: 0;
     padding: 0;
 }
 
-/* 1. グローバルヘッダーのスタイル */
+
 #global-header {
     background-color: #fff;
 }
@@ -31,7 +30,6 @@ body {
     text-decoration: none;
 }
 
-/* ナビリンク */
 .nav-links {
     list-style: none;
     padding: 0;
@@ -58,7 +56,7 @@ body {
     color: #007bff
 }
 
-/* 2. 全セクションの共通スタイル */
+
 .content-section {
     padding: 60px 0;
     border-top: 1px solid #eee;
@@ -66,7 +64,7 @@ body {
     border-bottom: 3px solid #fff
 }
 
-/* セクションの見出し */
+
 .content-section h2 {
     text-align: center;
     font-size: 2em;
@@ -77,7 +75,7 @@ body {
     line-height: 1.2;
 }
 
-/* 3. 成果物アイテムのスタイル */
+
 .work-item {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -87,7 +85,7 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
 }
 
-/* ヒーロー・プロフィール画像（レスポンシブ） */
+
 .hero-section .container {
     display: flex;
     justify-content: center;
@@ -102,22 +100,16 @@ body {
     border-radius: 0;
     /* ← 丸みをなくす */
     object-fit: cover;
-    /* 枠いっぱいに表示してトリミング */
     display: block;
 }
 
 .profile-img {
     width: 200px;
-    /* 写真サイズ（調整可） */
     height: 200px;
-    /* 正方形にすることで円形が綺麗に */
     object-fit: cover;
-    /* 画像をはみ出さず中央で切り取る */
     border-radius: 50%;
-    /* これで円形になる！ */
     display: block;
     margin: 20px auto;
-    /* 中央寄せ */
 }
 
 .about h3 {
@@ -126,18 +118,12 @@ body {
     font-style: normal;
 }
 
-/* === 自己紹介セクション（画像＋テキスト横並び） === */
 .about-container {
     display: flex;
-    /* 横並びにする */
     align-items: center;
-    /* 縦の位置を中央に */
     justify-content: center;
-    /* 全体を中央寄せ */
     gap: 40px;
-    /* 画像とテキストの間隔 */
     flex-wrap: wrap;
-    /* 画面が狭い時は縦並びにする */
 }
 
 .profile-img {
@@ -146,7 +132,6 @@ body {
     object-fit: cover;
     border-radius: 50%;
     margin: 0;
-    /* autoを削除して中央寄せ解除 */
 }
 
 .about-text {
@@ -173,38 +158,29 @@ body {
     background-color: #80bfff;
 }
 
-/* ===== 趣味ギャラリー全体（横並び設定） ===== */
+
 .hobby-gallery {
     display: flex;
     flex-wrap: wrap;
-    /* 画面が狭い時は自動で折り返す */
     justify-content: center;
-    /* 中央寄せ */
     gap: 30px;
-    /* 各カードの間隔 */
     margin-top: 40px;
 }
 
-/* ===== 各趣味アイテム ===== */
 .hobby-item {
     max-width: 300px;
     text-align: center;
 }
 
-/* ===== 各趣味の画像 ===== */
 .hobby-item img {
     width: 100%;
-    /* 親要素に合わせる */
     height: 250px;
-    /* 統一した高さ */
     object-fit: cover;
-    /* 中央でトリミング */
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     filter: brightness(105%) contrast(95%);
 }
 
-/* ===== 説明文 ===== */
 .hobby-item p {
     margin-top: 10px;
     line-height: 1.6;
@@ -212,8 +188,6 @@ body {
     border-radius: 5px;
 }
 
-
-/* 4. フッターのスタイル */
 #contact {
     width: 100%;
     background-color: #80bfff;
