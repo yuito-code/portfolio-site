@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Y.M - ポートフォリオ</title>
+    <meta name="description" content="Y.Mのポートフォリオサイト。プロフィール、スキル、制作実績、趣味などを紹介しています。">
+    <title>Y.M | Portfolio</title>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 
 </head>
-<body>
 
+<body>
     <header id="global-header">
         <nav>
             <div class="site-title">
@@ -19,12 +20,12 @@
             </div>
 
             <ul class="nav-links">
-                    <li><a href="#about">自己紹介</a></li>
-                    <li><a href="#skills">スキル</a></li>
-                    <li><a href="#works">成果物</a></li>
-                    <li><a href="#hobby">趣味</a></li>
-                    <li><a href="#goals">目標</a></li>
-                    <li><a href="#contact">連絡先</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#works">成果物</a></li>
+                <li><a href="#hobby">趣味</a></li>
+                <li><a href="#goals">目標</a></li>
+                <li><a href="#contact">連絡先</a></li>
             </ul>
         </nav>
 
@@ -42,129 +43,155 @@
 
             <div class="about-text">
                 <h3>Y,M</h3>
-                <p>京都府在住の24歳。AIが社会を変えていく姿を見てエンジニアに興味を持ちました。
-                    現在はJSやReactスキルを磨いています。</p>
+                <p>
+                    IT技術を活用して身近な課題を解決し、ユーザーにとって便利で価値のあるサービスを生み出したいと考え、Webエンジニアを目指すようになりました。<br>
+                    現在はフロントエンド開発を中心に学習しており、JavaScriptやReactの習得に取り組んでいます。ユーザーにとって見やすく使いやすいサービスを開発できるエンジニアを目指し、日々技術力の向上に努めています。
+                </p>
             </div>
         </div>
     </section>
 
     <section id="skills" class="content-section">
-            <h2>スキルセット</h2>
+        <h2>スキルセット</h2>
 
-            <div class="skills-menu">
-
-            <div>
-            <h3>🌐 フロントエンド</h3>
-            <p>HTML, CSS(Tailwind CSS), JavaScript（React, TypeScript）</p>
-            </div>
+        <div class="skills-menu">
 
             <div>
-            <h3>💻 バックエンド</h3>
-            <p>PHP(Laravel)</p>
+                <h3>🌐 フロントエンド</h3>
+                <p>JavaScript, TypeScript, React</p>
             </div>
 
             <div>
-            <h3>🗃️ データベース</h3>
-            <p>MySQL</p>
+                <h3>💻 バックエンド</h3>
+                <p>PHP(Laravel)</p>
             </div>
 
             <div>
-            <h3>⚙️ 開発環境・ツール</h3>
-            <p>Docker, Git, GitHub, VSCode</p>
+                <h3>🗃️ データベース</h3>
+                <p>MySQL</p>
             </div>
 
             <div>
-            <h3>💿 OS</h3>
-            <p>macOS,Windows</p>
+                <h3>⚙️ 開発環境・ツール</h3>
+                <p>Docker, Git, GitHub, VSCode</p>
             </div>
 
+            <div>
+                <h3>💿 OS</h3>
+                <p>macOS,Windows</p>
             </div>
+
+        </div>
 
     </section>
 
     <section id="works" class="content-section">
-            <h2>成果物 (Projects)</h2>
-            <article class="work-item">
-                <h3>プロジェクト名：SNSクローンアプリ</h3>
-                <p>【概要】
-                    ユーザー登録・投稿・コメント機能を備えたSNSクローンアプリ。Laravelでバックエンドを構築し、<br>
-                    フロントエンドはHTML/CSS/JavaScriptで実装。Dockerで開発環境を整え、MySQLをデータベースとして利用。</p>
-                <p>【技術】HTML, CSS, JavaScript, React, TypeScript, PHP(Laravel), Blade, MySQL, Docker, Git</p>
-                <h3><a href="https://github.com/eigrjeao/kadai-microposts" target="_blank" rel="noopener noreferrer">GitHub</a></h3>
+
+        <h2>成果物 (Projects)</h2>
+
+        <article class="work-item">
+            <h3>プロジェクト名：ユーザー管理Webアプリケーション</h3>
+
+            <div class="work-detail">
+                <h3>概要</h3>
+                <p>
+                    ReactとTypeScriptを使用して開発した
+                    ユーザー情報を管理する簡易的なWebアプリケーションです。
+                    REST APIを通じてユーザー情報の取得・登録・更新・削除を行う
+                    CRUD機能を実装しました。
+                    また、API通信処理をサービス層に分離し、
+                    画面表示とデータ処理を整理しています。
+                </p>
             </div>
+
+            <div class="work-detail">
+                <h3>使用技術</h3>
+                <ul class="tech-list">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Vite</li>
+                    <li>REST API</li>
+                    <li>Fetch API</li>
+                </ul>
+            </div>
+                
+            <h3><a href="https://user-management-app-dpvh.vercel.app/" target="_blank" rel="noopener noreferrer">ユーザー管理Webアプリケーションデモを見る</a></h3>
+        </article>
     </section>
 
     <section id="hobby" class="content-section">
         <h2>趣味</h2>
 
-            <div class="hobby-gallery">
+        <div class="hobby-gallery">
 
-                <div class="hobby-item">
-                    <img src="images/IMG_5808.jpg" alt="趣味画像">
-                    <h3>旅行</h3>
-                    <p>その土地ならではの文化や観光地を回ることが多いです。<br>
-                        新しい価値観や発見があり心も豊かになります。
-                    </p>
-                </div>
-
-                <div class="hobby-item">
-                    <img src="images/IMG_0425.jpg" alt="サッカー画像">
-                    <h3>サッカー観戦</h3>
-                    <p>国内外の試合をよくチェックしています。
-                        チームの一体感や選手の努力に刺激を受け、自分も頑張ろうという気持ちになります。</p>
-                </div>
-
-                <div class="hobby-item">
-                    <img src="images/IMG_2196.jpg" alt="筋トレ画像">
-                    <h3>筋力トレーニング</h3>
-                    <p>体を動かすことが好きで、日課として筋トレを続けています。<br>
-                        コツコツ継続することで、自分の成長を実感できるのが楽しいです。</p>
-                </div>
-
-                <div class="hobby-item">
-                    <img src="images/IMG_9902.JPG" alt="スノーボード写真">
-                    <h3>スノーボード</h3>
-                    <p>
-                        リフト上から眺める景色が絶景です。<br>
-                        最近ではグランドトリックと言われる飛ぶ、回るといった高度な技にも挑戦しています。</p>
-                </div>
-
+            <div class="hobby-item">
+                <img src="images/IMG_5808.jpg" alt="趣味画像">
+                <h3>旅行</h3>
+                <p>その土地ならではの文化や観光地を回ることが多いです。<br>
+                    新しい価値観や発見があり心も豊かになります。
+                </p>
             </div>
+
+            <div class="hobby-item">
+                <img src="images/IMG_0425.jpg" alt="サッカー画像">
+                <h3>サッカー観戦</h3>
+                <p>国内外の試合をよくチェックしています。
+                    チームの一体感や選手の努力に刺激を受け、自分も頑張ろうという気持ちになります。</p>
+            </div>
+
+            <div class="hobby-item">
+                <img src="images/IMG_2196.jpg" alt="筋トレ画像">
+                <h3>筋力トレーニング</h3>
+                <p>体を動かすことが好きで、日課として筋トレを続けています。<br>
+                    コツコツ継続することで、自分の成長を実感できるのが楽しいです。</p>
+            </div>
+
+            <div class="hobby-item">
+                <img src="images/IMG_9902.JPG" alt="スノーボード写真">
+                <h3>スノーボード</h3>
+                <p>リフト上から眺める景色が絶景です。<br>
+                    最近ではグランドトリックと言われる飛ぶ、回るといった高度な技にも挑戦しています。</p>
+            </div>
+
+        </div>
 
     </section>
 
     <section id="goals" class="content-section">
         <h2>今後の目標</h2>
-            <p>目標：幅広い職種や業界の課題解決を行いエンジニアとしてさらにスキルを磨きたいです。<br>
-                また、上流のプロジェクトや設計に関わっていく中で新しい価値観を見出したいです。</p>
+        <p>
+            今後はJavaScriptやReactの理解を深め、幅広い機能を実装できるフロントエンドエンジニアを目指しています。
+            さらに、プログラミングの技術力だけでなく、要件定義や設計などの上流工程にも携わりたいと考えています。
+            将来的には、ユーザーやクライアントの課題を理解し、企画・設計から開発まで一貫して価値を提供できるエンジニアになることが目標です
+        </p>
     </section>
 
-<footer id="contact">
+    <footer id="contact">
         <h2>連絡先</h2>
 
-    <form action="#" method="post">
-        <div class="form">
-            <p>NAME</p>
-            <input type="text" name="name" required>
+        <form action="#" method="post">
+            <div class="form">
+                <p>NAME</p>
+                <input type="text" name="name" required>
+            </div>
+
+            <div class="form">
+                <p>EMAIL</p>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="form">
+                <p>MESSAGE</p>
+                <textarea name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="button">送信</button>
+        </form>
+
+        <div class="footer-bottom">
+            <small>&copy; Y,M portfolie</small>
         </div>
-
-        <div class="form">
-            <p>EMAIL</p>
-            <input type="email" name="email" required>
-        </div>
-
-        <div class="form">
-            <p>MESSAGE</p>
-            <textarea name="message" rows="4" required></textarea>
-        </div>
-
-        <button type="button" class="button">送信</button>
-    </form>
-
-    <div class="footer-bottom">
-    <small>&copy; Y,M portfolie</small>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>
