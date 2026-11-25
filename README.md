@@ -28,6 +28,8 @@
 - style.css
 - images
 
+##　成果物
+
 <h1 align="left">user-management-app</h1>
 
 <p align="left"> React + TypeScriptを使用して作成したユーザー管理Webアプリケーション </p>
